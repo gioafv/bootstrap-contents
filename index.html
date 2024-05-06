@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>All Study - Bootstrap</title>
+        <link rel="stylesheet" href="./lib/bootstrap.min.css" />
+        <style>
+            .col-3 {
+                padding-left: 0;
+                padding-right: 0;
+                padding: 3px;
+            }
+
+            .card-img-overlay {
+                background-color: rgba(0, 0, 0, 0.8);
+            }
+
+            .card-title {
+                margin-bottom: 8px;
+            }
+
+            .card-subtitle {
+                margin-bottom: 25px;
+                font-weight: 200;
+            }
+
+            #button-card-indisp {
+                background-color: rgb(0, 0, 0);
+                color: #303030;
+                border: none;
+            }
+
+            #carousel {
+                margin-top: 50px;
+            }
+
+            .footer {
+                margin-top: 50px;
+            }
+
+            .card-no-padding {
+                padding-left: 0;
+                padding-right: 0;
+                padding: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="navbar navbar-expand-lg">
+                <div class="container">
+                    <h1>Bootstrap Study</h1>
+                    <button
+                        data-bs-target="#menu"
+                        data-bs-toggle="collapse"
+                        type="button"
+                        class="navbar-toggler"
+                    >
+                        Bootstrap Content
+                    </button>
+                    <nav
+                        class="justify-content-end collapse navbar-collapse"
+                        id="menu"
+                    >
+                        <ul class="nav nav-pills navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Carousel</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Cards</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <button
+                        id="btn-checar-emails"
+                        type="button"
+                        class="btn btn-warning"
+                    >
+                        Toast Study
+                    </button>
+                </div>
+            </div>
+        </header>
+        <section id="cards">
+            <div class="container">
+                <h2>Cards</h2>
+                <div class="container">
+                    <div class="row">
+                        <div
+                            class="col col-sm-1 col col-md-6 col col-lg-6 card-no-padding"
+                        >
+                            <div
+                                class="card text-bg-dark"
+                                style="height: 30rem; overflow: hidden"
+                            >
+                                <img
+                                    src="https://wallpapers-clan.com/wp-content/uploads/2023/10/dc-comics-batman-black-red-wallpaper.jpg"
+                                />
+                                <div
+                                    class="d-flex flex-column card-img-overlay"
+                                >
+                                    <h4 class="card-title">
+                                        Batman: O Cavaleiro das Trevas
+                                    </h4>
+                                    <h6 class="card-subtitle">Disponível</h6>
+                                    <p class="card-text">
+                                        Batman tem conseguido manter a ordem em
+                                        Gotham com a ajuda de Jim Gordon e
+                                        Harvey Dent. No entanto, um jovem e
+                                        anárquico criminoso, conhecido apenas
+                                        como Coringa, pretende testar o
+                                        Cavaleiro das Trevas e mergulhar a
+                                        cidade em um verdadeiro caos.
+                                    </p>
+                                    <a
+                                        href="#"
+                                        id="button-cards-disp"
+                                        class="btn btn-primary align-self-start mt-auto"
+                                        >Assistir ao filme</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col col-sm-1 col col-md-6 col col-lg-6 card-no-padding"
+                        >
+                            <div
+                                class="card text-bg-dark"
+                                style="height: 30rem; overflow: hidden"
+                            >
+                                <img
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8W8whhqOrvTkBJzD86N4GCfN2wsLaMJ4imZmbjxXjHQ&s"
+                                />
+                                <div
+                                    class="d-flex flex-column card-img-overlay"
+                                >
+                                    <h4 class="card-title">
+                                        O espetacular homem-aranha!
+                                    </h4>
+                                    <h6 class="card-subtitle">
+                                        Em breve nos cinemas!
+                                    </h6>
+                                    <p class="card-text">
+                                        O jovem Peter Parker quer saber mais
+                                        sobre sua origem. Ele encontra uma pasta
+                                        que pertenceu ao seu pai e tenta
+                                        descobrir por que seus pais
+                                        desapareceram. A sua busca o leva a
+                                        Oscorp e ao dr. Curt Connors, que tem
+                                        como alter ego o letal Lagarto.
+                                    </p>
+                                    <a
+                                        href="#"
+                                        id="button-card-indisp"
+                                        class="btn btn-primary align-self-start mt-auto"
+                                        >Indisponível</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col col-sm-1 col col-md-6 col col-lg-6 card-no-padding"
+                        >
+                            <div
+                                class="card text-bg-dark"
+                                style="height: 30rem; overflow: hidden"
+                            >
+                                <img
+                                    src="https://i.pinimg.com/originals/cf/9b/22/cf9b2260b5211cbbfff8adcc0c1240a0.jpg"
+                                />
+                                <div
+                                    class="d-flex flex-column card-img-overlay"
+                                >
+                                    <h4 class="card-title">Coringa</h4>
+                                    <h6 class="card-subtitle">Disponível</h6>
+                                    <p class="card-text">
+                                        Isolado, intimidado e desconsiderado
+                                        pela sociedade, o fracassado comediante
+                                        Arthur Fleck inicia seu caminho como uma
+                                        mente criminosa após assassinar três
+                                        homens em pleno metrô. Sua ação inicia
+                                        um movimento popular contra a elite de
+                                        Gotham City, da qual Thomas Wayne é seu
+                                        maior representante.
+                                    </p>
+                                    <a
+                                        href="#"
+                                        id="button-cards-disp"
+                                        class="btn btn-primary align-self-start mt-auto"
+                                        >Assistir ao filme</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col col-sm-1 col col-md-6 col col-lg-6 card-no-padding"
+                        >
+                            <div
+                                class="card text-bg-dark"
+                                style="height: 30rem; overflow: hidden"
+                            >
+                                <img
+                                    src="https://i.pinimg.com/originals/ae/34/41/ae3441fb55c68f217d7a2ece568ecd55.jpg"
+                                />
+                                <div
+                                    class="d-flex flex-column card-img-overlay"
+                                >
+                                    <h4 class="card-title">
+                                        O Lorax: Em Busca da Trúfula Perdida
+                                    </h4>
+                                    <h6 class="card-subtitle">Disponível</h6>
+                                    <p class="card-text">
+                                        Ted vive em um lugar onde as árvores são
+                                        feitas de plástico e tudo é artificial.
+                                        Ele deixa a cidade com a intenção de
+                                        trazer uma árvore de verdade para
+                                        impressionar a garota por quem é
+                                        apaixonado.
+                                    </p>
+                                    <a
+                                        href="#"
+                                        id="button-card-indisp"
+                                        class="btn btn-primary align-self-start mt-auto"
+                                        >Indisponível</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="carousel">
+            <div class="container">
+                <div
+                    id="carouselExampleControls"
+                    class="carousel slide"
+                    data-bs-ride="carousel"
+                >
+                    <div class="section-title">
+                        <h3>Aprendizado - Carousels</h3>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img
+                                src="./images/hulk.jpg"
+                                class="d-block w-100 carousel-imgs"
+                                alt="O Incrível Hulk - 2024"
+                            />
+                            <div class="carousel-caption">
+                                <h2>O Incrível Hulk - 2024</h2>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img
+                                src="./images/velozes.jpg"
+                                class="d-block w-100 carousel-imgs"
+                                alt="Velozes e Furiosos!"
+                            />
+                            <div class="carousel-caption">
+                                <h2>Velozes e Furiosos: 11 - 2024</h2>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img
+                                src="./images/homemdeferro.jpg"
+                                class="d-block w-100 carousel-imgs"
+                                alt="Homem de Ferro"
+                            />
+                            <div class="carousel-caption">
+                                <h2>
+                                    Homem de Ferro: Dessa vez de Lata - 2024
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev"
+                    >
+                        <span
+                            class="carousel-control-prev-icon"
+                            aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next"
+                    >
+                        <span
+                            class="carousel-control-next-icon"
+                            aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Próximo</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="footer">
+            <div class="container">
+                <footer></footer>
+            </div>
+        </section>
+        <script src="/lib/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
